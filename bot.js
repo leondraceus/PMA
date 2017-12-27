@@ -12,7 +12,7 @@ mga.on('ready', () => {
   mga.user.setGame('pma-commands')
 });
 
-bot.on('guildMemberAdd', member => {
+mga.on('guildMemberAdd', member => {
     member.send(`:door: **__Welcome to Pokémon Mega Adventure Discord__** :door:
 I hope you enjoy your time here and follow our <#395226662276431874> | <#395227126175105024> `);
 });
