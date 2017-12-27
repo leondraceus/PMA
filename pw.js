@@ -12,6 +12,11 @@ pw.on('ready', () => {
     pw.user.setGame('send -help',`https://www.twitch.tv/pokemon`)
 });
 
+pw.on('guildMemberAdd', member => {
+    member.send(`:door: **__Welcome to Pokémon Mega Adventure Discord__** :door:
+I hope you enjoy your time here and follow our <#395226662276431874> | <#395227126175105024> `);
+});
+
 pw.commands = new Discord.Collection();
 
 fs.readdir("./cmds/", (err, files) => {
