@@ -8,7 +8,7 @@ module.exports.run = (pw, message, args) => {
         .addField(`pma-encounter <Location>`,`Check encounters of specific Location.`,inline = true)
         .addField(`pma-mega <Pokémon>`,`Find Mega Stone's location.`,inline = true)
         .addField(`pma-control`,`Controls in Game.`,inline = true)
-        .setColor(`#ff99cc`);
+        .setColor(`#E91E63`);
    
     message.channel.sendEmbed(embed);
     console.log(`${message.author.username}#${message.author.discriminator} sent help!`);
